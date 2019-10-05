@@ -59,10 +59,17 @@ Ext.define('GDPR.view.masterPages.TcompanyGrid' ,{
             header: 'Division ID', dataIndex: 'divisionID', flex: 1,
             editor: {
                 xtype: 'combobox',
-                queryMode: 'local',
+                autoDestroyBoundStore: true,
+                queryMode: 'remote', //local, remote
                 store: Ext.create('Ext.data.Store', {
+                    autoDestroy: true,
                     fields: ['ID', 'divisionName'],
-                    data: GDPR.gbl.metadata.divisionData.tdivision
+                    listeners: {
+                        load: function(store,records,options) {
+                            store.removeAll();
+                            store.add(GDPR.gbl.metadata.divisionData.tdivision);
+                        }
+                    }
                 }),
                 displayField: 'divisionName',
                 valueField: 'ID',

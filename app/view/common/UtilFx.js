@@ -21,8 +21,8 @@ Ext.define("GDPR.view.common.UtilFx", {
     var storeURL = url;
     //console.log("URL - "+storeURL)
     var myStore = Ext.create('Ext.data.JsonStore', {
-      autoDestroy: false,
-      autoLoad: true,
+      autoDestroy: true,
+      autoLoad: false,
       model: modelName,
       useDefaultXhrHeader: false,
       cors: true,
@@ -63,12 +63,12 @@ Ext.define("GDPR.view.common.UtilFx", {
                 xtype:"button",hidden:false, height:"30px", style:"margin:10px 0px 0px 5px;",
                 tooltip:"Add Record", text:'Add Record', icon:"./images/add.gif", itemId:"addRecordId",                     
                 handler: function () { 
-
+                   /*
                     var newDummyRec = {};
                     for(val in dummyRecord){
                       newDummyRec[val] = "";
-                    }
-                    var newRow = Ext.create(modelName, dummyRecord);
+                    }*/
+                    var newRow = Ext.create(modelName, {});
                     //store.remove(store.findRecord('id', 50, 0, false, true, true));//exact match
                     //me.getStore().add(newRow);
                     me.getStore().insert(0, {});

@@ -1,0 +1,24 @@
+Ext.define('GDPR.override.AjaxProxy', {
+    requires: ['Ext.util.Cookies', 'Ext.Ajax'],
+    override: 'Ext.data.proxy.Ajax',
+
+    constructor: function(config) {
+        console.log("AjaxProxy Constructor");
+        var me = this;
+        config = config || {};
+        me.callParent([config]);
+        me.extraParams = config.extraParams || {};
+         
+         
+        if (Ext.isIE8) {
+          Ext.apply(me.extraParams,{
+           'JSESSIONID' : Ext.util.Cookies.get('JSESSIONID')
+          });
+        }
+ 
+        me.api = Ext.apply({}, config.api || me.api);
+         
+        //backwards compatibility, will be deprecated in 5.0
+        me.nocache = me.noCache;
+    }
+});

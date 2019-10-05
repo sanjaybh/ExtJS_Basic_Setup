@@ -49,11 +49,18 @@ Ext.define('GDPR.view.masterPages.TcompanySystemGrid' ,{
             header: 'Company ID', dataIndex: 'companyID', flex: 1,
             editor: {
                 xtype: 'combobox',
-                queryMode: 'local',
+                autoDestroyBoundStore: true,
+                queryMode: 'remote',
                 store: Ext.create('Ext.data.Store', {
+                    autoDestroy: true,
                     fields: ['ID', 'companyName'],
-                    data: GDPR.gbl.metadata.companyData.tcompany
-                }),
+                    listeners: {
+                        load: function(store,records,options) {
+                            store.removeAll();
+                            store.add(GDPR.gbl.metadata.companyData.tcompany);
+                        }
+                    }
+                }),                
                 displayField: 'companyName',
                 valueField: 'ID',
                 //allowBlank: false,
@@ -70,11 +77,19 @@ Ext.define('GDPR.view.masterPages.TcompanySystemGrid' ,{
             header: 'System ID', dataIndex: 'systemID', flex: 1,
             editor: {
                 xtype: 'combobox',
-                queryMode: 'local',
+                autoDestroyBoundStore: true,
+                queryMode: 'remote',
                 store: Ext.create('Ext.data.Store', {
+                    autoDestroy: true,
                     fields: ['ID', 'systemName'],
-                    data: GDPR.gbl.metadata.systemData.tsystem
-                }),
+                    listeners: {
+                        load: function(store,records,options) {
+                            store.removeAll();
+                            store.add(GDPR.gbl.metadata.systemData.tsystem);
+                        }
+                    }
+                }),  
+
                 displayField: 'systemName',
                 valueField: 'ID',
                 //allowBlank: false,
@@ -91,10 +106,16 @@ Ext.define('GDPR.view.masterPages.TcompanySystemGrid' ,{
             header: 'Responsible Person ID', dataIndex: 'responsiblePersonID', flex: 1,
             editor: {
                 xtype: 'combobox',
-                queryMode: 'local',
+                queryMode: 'remote',
                 store: Ext.create('Ext.data.Store', {
+                    autoDestroy: true,
                     fields: ['ID', 'userDisplayName'],
-                    data: GDPR.gbl.metadata.userData.tuser
+                    listeners: {
+                        load: function(store,records,options) {
+                            store.removeAll();
+                            store.add(GDPR.gbl.metadata.userData.tuser);
+                        }
+                    }
                 }),
                 displayField: 'userDisplayName',
                 valueField: 'ID',

@@ -1,0 +1,14 @@
+Ext.define('GDPR.override.DataConnection', {
+    override: 'Ext.data.Connection',
+    withCredentials: true,
+    cors: true,
+
+    constructor: function(config) {
+        console.log("DataConnection Constructor");
+    },
+    initComponent: function() { 
+        console.log("getting loaded here in this panel");
+
+        this.callParent(arguments);
+    }
+});

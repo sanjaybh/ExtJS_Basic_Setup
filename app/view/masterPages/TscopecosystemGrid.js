@@ -48,11 +48,18 @@ Ext.define('GDPR.view.masterPages.TscopecosystemGrid' ,{
             header: 'Scope ID', dataIndex: 'scopeID', flex: 1,
             editor: {
                 xtype: 'combobox',
-                queryMode: 'local',
+                queryMode: 'remote',
                 store: Ext.create('Ext.data.Store', {
+                    autoDestroy: true,
                     fields: ['ID', 'scopeName'],
-                    data: GDPR.gbl.metadata.scopeData.tscope
+                    listeners: {
+                        load: function(store,records,options) {
+                            store.removeAll();
+                            store.add(GDPR.gbl.metadata.scopeData.tscope);
+                        }
+                    }
                 }),
+
                 displayField: 'scopeName',
                 valueField: 'ID',
                 //allowBlank: false,
@@ -69,22 +76,38 @@ Ext.define('GDPR.view.masterPages.TscopecosystemGrid' ,{
             header: 'Company System ID', dataIndex: 'coSystemID', flex: 1,
             editor: {
                 xtype: 'combobox',
-                queryMode: 'local',
+                
+                queryMode: 'remote',
                 store: Ext.create('Ext.data.Store', {
-                    fields: ['ID', 'systemID'],
-                    data: GDPR.gbl.metadata.companySystemData.tcompanysystem
+                    autoDestroy: true,
+                    fields: ['ID', 'companyID'],
+                    listeners: {
+                        load: function(store, records, options) {
+                            store.removeAll();
+                            store.add(GDPR.gbl.metadata.companySystemData.tcompanysystem);
+                        },
+                        change: function(store, records, options) {
+                            //
+                        }
+                    }
                 }),
-                displayField: 'systemID',
+                displayField: 'companyID',
                 valueField: 'ID',
                 //allowBlank: false,
                 editable: false,
                 forceSelection: true,
                 triggerAction: 'all'
             },
-            renderer: function(value, metaData, record, row, col, store, gridView){
+            renderer: function(value, metaData, record, row, col, store, gridView){ 
                 //url = data that will come on initial load as an array
-                var columnObject = {"url": GDPR.gbl.metadata.companySystemData.tcompanysystem, "returnProperty": 'systemID' }
-                return me.utilityFx().recreateColumnRenderer(value, metaData, record, row, col, store, gridView, columnObject);
+                var columnObject = {"url": GDPR.gbl.metadata.companySystemData.tcompanysystem, "returnProperty": 'companyID' }
+                var companyId = me.utilityFx().recreateColumnRenderer(value, metaData, record, row, col, store, gridView, columnObject);
+                //return companyId;
+
+                var columnObject = {"url": GDPR.gbl.metadata.companyData.tcompany, "returnProperty": 'companyName' }
+                var companyName = me.utilityFx().recreateColumnRenderer(companyId, metaData, record, row, col, store, gridView, columnObject);
+
+                return companyName;
             }
         }];
         this.store = me.utilityFx().createJsonStoreForGrids(modelConfig.modelName, gridURL, modelConfig.modelRoot)

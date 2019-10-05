@@ -1,3 +1,5 @@
+//import Connection from '../../resources/Connection.js';
+
 //function Constants(){
 
 Ext.define('GDPR.common.Constants', {
@@ -17,8 +19,9 @@ Ext.define('GDPR.common.Constants', {
     //this.URL_STUBBED_FILES = this.URL_SERVER_BASE_ROOT+"/stubbed/";
     this.URL_STUBBED_FILES = this.URL_SERVER_ROOT+"stubbed/";
 
-    this.URL_SERVER_BASEURL = "http://localhost:8080/GDPR";
-    
+    //this.URL_SERVER_BASEURL = "http://localhost:8081/GDPR";
+    this.URL_SERVER_BASEURL = new Connection().URL_SERVER_BASEURL;
+
     this.URL_WEST_PANEL = this.URL_STUBBED_FILES+"/treeData.json";
     
 

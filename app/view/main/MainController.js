@@ -28,18 +28,14 @@ Ext.define('GDPR.view.main.MainController', {
                 cp.setActiveItem(r.data.id);
 
                 var cardPanel = cp.down('panel[id='+r.data.id+']');
-                var _width = cardPanel.width || '700';
+                var _width = cardPanel.width || '700';                
                 
-                cardPanel.setTitle('');
-                cardPanel.setTitle(r.data.text);
-
-                /*if(r.data.id !== 'tDdrStatus'){
+                var task = new Ext.util.DelayedTask(function(){
                     cardPanel.setTitle('');
                     cardPanel.setTitle(r.data.text);
-                }else{
-                    cardPanel.setTitle('DDR Status')
-                }*/
-                cardPanel.setWidth(_width)
+                    cardPanel.setWidth(_width)
+                });
+                task.delay(200);                
             }else{
                 Ext.Msg.alert('Alert!','Coming soon...')
             }
@@ -89,7 +85,7 @@ Ext.define('GDPR.view.main.MainController', {
             return true;
         }
 
-        console.log("Start execution");
+        //console.log("Start execution");
 
         var selectedNode = _grid.getSelectionModel().getSelected();         
         if(selectedNode.length === 0){
@@ -114,7 +110,7 @@ Ext.define('GDPR.view.main.MainController', {
                         "type" : type
                     };                    
                     readyForDB = true;
-                    console.log("Save this record")
+                    //console.log("Save this record")
                 } 
                 else if(_grid.getStore().getModifiedRecords().length > 0){
                     var url = GDPR.gbl.constants.URL_MASTER_PANEL_SUCCESS_MSG;
@@ -187,13 +183,13 @@ Ext.define('GDPR.view.main.MainController', {
 
     loadMetaDataAgain: function(){
         var AppRoot = GDPR.getApplication();
-        console.log("Load metadata store again");
+        //console.log("Load metadata store again");
         AppRoot.loadMetaData(AppRoot, {"fireFrom" : "MainController"})
     },
     
     isEmptyValuesValidation: function(params, _this, _grid){ 
         var myObj = Ext.decode(params.reqjson);
-        console.log("OBJ to validate - "+params.reqjson);
+        //console.log("OBJ to validate - "+params.reqjson);
 
         var propertyArray = [];
         //var propertyString = 'Mandatory fields are empty';

@@ -47,11 +47,18 @@ Ext.define('GDPR.view.masterPages.TddrstatusGrid' ,{
                 header: 'Status Type', dataIndex: 'statusType', flex: 1,
                 editor: {
                     xtype: 'combobox',
-                    queryMode: 'local',
+                    queryMode: 'remote',
                     store: Ext.create('Ext.data.Store', {
+                        autoDestroy: true,
                         fields: ['ID', 'levelDescription'],
-                        data: GDPR.gbl.metadata.requestType.tstatusType
+                        listeners: {
+                            load: function(store,records,options) { 
+                                store.removeAll();
+                                store.add(GDPR.gbl.metadata.requestType.tstatusType);
+                            }
+                        }
                     }),
+
                     displayField: 'levelDescription',
                     valueField: 'ID',
                     //allowBlank: false,
@@ -60,8 +67,7 @@ Ext.define('GDPR.view.masterPages.TddrstatusGrid' ,{
                     triggerAction: 'all'
                 },
                 renderer: function(value, metaData, record, row, col, store, gridView){
-                    //url = data that will come on initial load as an array 
-                    //console.log(GDPR.gbl.metadata.requestType.tstatusType);              
+                    //url = data that will come on initial load as an array             
                     var columnObject = {"url": GDPR.gbl.metadata.requestType.tstatusType, "returnProperty": 'levelDescription' }
                     return me.utilityFx().recreateColumnRenderer(value, metaData, record, row, col, store, gridView, columnObject);
                 }
