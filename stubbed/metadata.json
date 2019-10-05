@@ -1,0 +1,213 @@
+{
+    "success": "true",
+    "tscope": [{
+		"ID": 200,
+		"scopeName": "ALL"
+	}, {
+		"ID": 202,
+		"scopeName": "Marketing"
+	}, {
+		"ID": 203,
+		"scopeName": "Support"
+	}],	
+	"tcompany": [{
+		"ID": 101,
+		"companyName": "Idera SQL",
+		"divisionID": "1",
+		"companyMnemonic": "SQL"
+	}, {
+		"ID": 102,
+		"companyName": "Precise",
+		"divisionID": "1",
+		"companyMnemonic": "Precise"
+	}, {
+		"ID": 103,
+		"companyName": "Uptime",
+		"divisionID": "1",
+		"companyMnemonic": "UT"
+	}, {
+		"ID": 104,
+		"companyName": "Data Gear",
+		"divisionID": "1",
+		"companyMnemonic": "DG"
+	}, {
+		"ID": 105,
+		"companyName": "SQLYog",
+		"divisionID": "1",
+		"companyMnemonic": "SQLYOG"
+	}, {
+		"ID": 106,
+		"companyName": "Aquadata Studio",
+		"divisionID": "1",
+		"companyMnemonic": "ADS"
+	}, {
+		"ID": 107,
+		"companyName": "Code Gear",
+		"divisionID": "2",
+		"companyMnemonic": "CG"
+	}, {
+		"ID": 108,
+		"companyName": "Sencha",
+		"divisionID": "2",
+		"companyMnemonic": "Sencha"
+	}, {
+		"ID": 109,
+		"companyName": "WholeTomato",
+		"divisionID": "2",
+		"companyMnemonic": "WT"
+	}, {
+		"ID": 110,
+		"companyName": "Lansa",
+		"divisionID": "2",
+		"companyMnemonic": "Lansa"
+	}, {
+		"ID": 111,
+		"companyName": "Froala",
+		"divisionID": "2",
+		"companyMnemonic": "Froala"
+	}, {
+		"ID": 112,
+		"companyName": "Testrail",
+		"divisionID": "3",
+		"companyMnemonic": "TR"
+	}, {
+		"ID": 113,
+		"companyName": "Kiuwan",
+		"divisionID": "3",
+		"companyMnemonic": "Kiuwan"
+	}, {
+		"ID": 114,
+		"companyName": "Assembla",
+		"divisionID": "3",
+		"companyMnemonic": "Assembla"
+	}, {
+		"ID": 115,
+		"companyName": "Travis-CI",
+		"divisionID": "3",
+		"companyMnemonic": "Travis"
+	}, {
+		"ID": 116,
+		"companyName": "Ranorex",
+		"divisionID": "3",
+		"companyMnemonic": "Ranorex"
+	}],
+	"tuser": [{
+		"ID": 1,
+		"userName": "scottpatterson",
+		"userDisplayName": "Scott Patterson",
+		"userPassword": "35bd71d7ab6e680129de7f0401963a1f"
+	}, {
+		"ID": 2,
+		"userName": "uptimeuser",
+		"userDisplayName": "uptime user",
+		"userPassword": "ea4452c8bd47eb0d0c1dea7aa108eda5"
+	}, {
+		"ID": 3,
+		"userName": "senchauser",
+		"userDisplayName": "sencha user",
+		"userPassword": "8160ef7190112f3b064d9f63ec8a7716"
+	}, {
+		"ID": 4,
+		"userName": "user4",
+		"userDisplayName": "testuser4",
+		"userPassword": "4c9a5087f0a8ca8d424d518c3c8026c4"
+	}, {
+		"ID": 5,
+		"userName": "user5",
+		"userDisplayName": "testuser5",
+		"userPassword": "652bb35eed28bb6396be2ae7108a4a16"
+	}, {
+		"ID": 6,
+		"userName": "user6",
+		"userDisplayName": "testuser6",
+		"userPassword": "92a958ee479fbc7a047485893ff44067"
+	}, {
+		"ID": 7,
+		"userName": "user7",
+		"userDisplayName": "testuser7",
+		"userPassword": "195fd989c7e50485787cb804743f42df"
+	}],
+	"tscopecosystem": [{
+		"ID": 701,
+		"scopeID": "200",
+		"coSystemID": "401"
+	}, {
+		"ID": 702,
+		"scopeID": "203",
+		"coSystemID": "401"
+	}],
+	"tcompanysystem": [{
+		"ID": 401,
+		"companyID": "101",
+		"systemID": "301",
+		"responsiblePersonID": "1"
+	}, {
+		"ID": 402,
+		"companyID": "103",
+		"systemID": "301",
+		"responsiblePersonID": "2"
+	}, {
+		"ID": 403,
+		"companyID": "108",
+		"systemID": "303",
+		"responsiblePersonID": "3"
+	}],
+	"tstatusType": [{
+		"ID": 501,
+		"levelDescription": "Request Status"
+	}, {
+		"ID": 502,
+		"levelDescription": "Task Status"
+	}],
+	"tsystem": [{
+		"ID": 301,
+		"systemName": "SQL Jira",
+		"systemDescription": "Jira used by SQL, Precise, UT",
+		"systemEntryPoint": "https://jira.uptimesoftware.com"
+	}, {
+		"ID": 302,
+		"systemName": "EMBT Jira",
+		"systemDescription": "Jira used by DG and CG ",
+		"systemEntryPoint": "http://vmsfjira:8665/secure/Dashboard.jspa"
+	}, {
+		"ID": 303,
+		"systemName": "Sencha Support",
+		"systemDescription": "Sencha Support app",
+		"systemEntryPoint": "https://support.sencha.com"
+	}, {
+		"ID": 304,
+		"systemName": "SurveyMonkey",
+		"systemDescription": "surveymonkey used by all",
+		"systemEntryPoint": "https://www.surveymonkey.com"
+	}],
+	"tddrstatus": [{
+		"ID": 601,
+		"statusType": 501,
+		"statusDescription": "Open"
+	}, {
+		"ID": 602,
+		"statusType": 501,
+		"statusDescription": "Closed"
+	}, {
+		"ID": 603,
+		"statusType": 502,
+		"statusDescription": "Open"
+	}, {
+		"ID": 604,
+		"statusType": 502,
+		"statusDescription": "Closed"
+	}],
+	"tdivision": [{
+		"ID": 1,
+		"divisionName": "Database Tools",
+		"divisionMnemonic": "DbTools"
+	}, {
+		"ID": 2,
+		"divisionName": "Development Tools",
+		"divisionMnemonic": "DevTools"
+	}, {
+		"ID": 3,
+		"divisionName": "DevOps",
+		"divisionMnemonic": "DevOps"
+	}]
+}

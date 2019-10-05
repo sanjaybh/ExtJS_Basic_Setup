@@ -1,0 +1,84 @@
+{
+    "metaData":{
+        "idProperty":"id",
+        "totalProperty":"total",
+        "successProperty":"success",
+        "root":"data",
+        "fields":[
+            {
+                "name":"id",
+                "type":"int"
+            },
+            {
+                "name":"name",
+                "type":"string"
+            },
+            {
+                "name":"email",
+                "type":"string"
+            },
+            {
+                "name":"address",
+                "type":"string"
+            }
+        ]
+    },
+    "columns":[
+        {
+            "dataIndex":"id",
+            "header":"ID",
+            "flex":1
+        },
+        {
+            "dataIndex":"name",
+            "header":"User Name",
+            "flex":1
+        },
+        {
+            "dataIndex":"email",
+            "header":"Email",
+						"flex":1
+        },
+        {
+            "dataIndex":"address",
+            "header":"Address",
+						"flex":1
+        }
+    ],
+    "total":5,
+    "success":true,
+    "message":"success",
+    "data":[
+        {
+            "id":1,
+            "name":"UserName-1",
+            "address":"123, XYZ Address 1",
+            "email":"email@domain.com"
+        },
+        {
+            "id":2,
+            "name":"UserName-2",
+            "address":"123, XYZ Address 2",
+            "email":"email@domain.com"
+        },
+        {
+            "id":3,
+            "name":"UserName-3",
+            "address":"123, XYZ Address 3",
+            "email":"email@domain.com"
+        },
+        {
+            "id":4,
+            "name":"UserName-4",
+            "address":"123, XYZ Address 4",
+            "email":"email@domain.com"
+        },
+        {
+            "id":5,
+            "name":"UserName-5",
+            "address":"123, XYZ Address 5",
+            "email":"email@domain.com"
+        }
+    ]
+
+}

@@ -1,0 +1,37 @@
+Setting up the environment for ExtJS (Sencha)
+============================================================
+Links presented in the video:
+	A browser with a debugger tool:
+	• Firefox with Firebug: https://www.mozilla.org/firefox/ and http://getfirebug.com/
+	• Google Chrome: www.google.com/chrome
+	
+	Webserver:
+	• Xampp: http://www.apachefriends.org/en/xampp...
+	
+	Sencha Command required tools
+	• Ruby: http://www.ruby-lang.org/en/downloads/
+	• Sass: http://sass-lang.com/
+	• Compass: http://compass-style.org/
+	• Java JDK (Java 7 or later): http://www.oracle.com/technetwork/jav...
+	• Java environment variables: http://docs.oracle.com/javase/tutoria...
+	• Apache Ant: http://ant.apache.org/bindownload.cgi
+	
+	
+https://www.sencha.com/blog/sencha-cmd-enterprise-workflow/
+
+> ExtJS\ext-5.1.0>sencha generate app GDPR ../GDPR/
+
+sencha app build -e production [-e, -c, -r*]
+
+The commonly used build options are:
+
+    -c (or —clean): Remove previous build output prior to executing build
+    -d (or —destination): The directory to which the build output is written
+    -r* (or —run*): Enables automatically running builds with the native packager
+
+
+Production path of the application will be below
+http://localhost:83/ExtJs/_Prod_Projects/production/GDPR/
+
+
+

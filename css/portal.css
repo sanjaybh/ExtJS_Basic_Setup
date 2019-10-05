@@ -1,0 +1,94 @@
+
+.portal-home {
+  background-image: url("../img/exclamation.gif") !important;
+}
+.cls-container-mainpanel{
+	background-color:#fff;
+}
+
+.red-back{
+ background-color: red;
+}
+.yellow-back{
+	background-color:yellow;
+}
+
+/*
+.portal-dashboard {
+  background-image: url("../../../../static/assets/famfamfam/icons/application_form.png") !important;
+}
+
+.portal-utilities {
+  background-image: url("../../../../static/assets/famfamfam/icons/key.png") !important;
+}
+
+.portal-boreport {
+  background-image: url("../../../../static/assets/famfamfam/icons/report.png") !important;
+}
+
+.portal-dataquality {
+  background-image: url("../../../../static/assets/famfamfam/icons/shield.png") !important;
+}
+
+.portal-ualsub {
+  background-image: url("../../../../static/assets/famfamfam/icons/tag_orange.png") !important;
+}
+
+.portal-metadata {
+  background-image: url("../../../../static/assets/famfamfam/icons/plugin.png") !important;
+}
+
+.portal-reports {
+  background-image: url("../../../../static/assets/famfamfam/icons/report_magnify.png") !important;
+}
+
+.portal-gcu {
+  background-image: url("../../../../static/assets/famfamfam/icons/application_form_edit.png") !important;
+}
+
+.portal-analytics {
+  background-image: url("../../../../static/assets/famfamfam/icons/chart_bar.png") !important;
+}
+*/
+.portal-admin-toolbar {
+	background-color: #EBD700;
+	background-image: none;
+	border-color: #D0D0D0;
+}
+
+.riopportal-card-headline {
+	font-family: "Open Sans Light", "Segoe UI", Arial, Helvetica, sans-serif;
+	color: #ffffff;
+	font-weight: 300;
+	font-style: normal;
+	letter-spacing: 0.00em;
+	font-size: 45px;
+	/*
+  padding-bottom:5px;
+  padding-top:3px;
+*/
+}
+
+
+.riopapp-tile-lgtext {
+	padding-top: 15px;
+	font-size: 58px;
+}
+
+.riopapp-tile-smtext {
+	padding-top: 10px;
+	font-size: 20px;
+	line-height: 1;
+}
+
+.ux-rangemenu-lt {
+	background-image: url("../img/less_than.png") !important;
+}
+
+.ux-rangemenu-gt {
+	background-image: url("../img/greater_than.png") !important;
+}
+
+.ux-rangemenu-eq {
+	background-image: url("../img/equals.png") !important;
+}

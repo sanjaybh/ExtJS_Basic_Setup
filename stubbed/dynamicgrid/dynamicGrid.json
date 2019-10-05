@@ -1,0 +1,204 @@
+{
+    "metaData":{
+        "idProperty":"id",
+        "totalProperty":"total",
+        "successProperty":"success",
+        "root":"data",
+        "fields":[
+            {
+                "name":"id",
+                "type":"int"
+            },
+            {
+                "name":"name",
+                "type":"string"
+            },
+            {
+                "name":"firstName",
+                "type":"string"
+            },
+            {
+                "name":"lastName",
+                "type":"string"
+            }
+        ]
+    },
+    "columns":[
+        {
+            "dataIndex":"id",
+            "header":"ID",
+            "flex":1
+        },
+        {
+            "dataIndex":"name",
+            "header":"User Name",
+            "flex":1
+        },
+        {
+            "dataIndex":"firstName",
+            "header":"First Name",
+						"flex":1
+        },
+        {
+            "dataIndex":"lastName",
+            "header":"Last Name",
+						"flex":1
+        }
+    ],
+    "total":100,
+    "success":true,
+    "message":"success",
+    "data":[
+        {
+            "id":1,
+            "name":"UserName-1",
+            "firstName":"My First Name No. 1",
+            "lastName":"My Last Name No. 1"
+        },
+        {
+            "id":2,
+            "name":"UserName-2",
+            "firstName":"My First Name No. 2",
+            "lastName":"My Last Name No. 2"
+        },
+        {
+            "id":3,
+            "name":"UserName-3",
+            "firstName":"My First Name No. 3",
+            "lastName":"My Last Name No. 3"
+        },
+        {
+            "id":4,
+            "name":"UserName-4",
+            "firstName":"My First Name No. 4",
+            "lastName":"My Last Name No. 4"
+        },
+        {
+            "id":5,
+            "name":"UserName-5",
+            "firstName":"My First Name No. 5",
+            "lastName":"My Last Name No. 5"
+        },
+        {
+            "id":6,
+            "name":"UserName-6",
+            "firstName":"My First Name No. 6",
+            "lastName":"My Last Name No. 6"
+        },
+        {
+            "id":7,
+            "name":"UserName-7",
+            "firstName":"My First Name No. 7",
+            "lastName":"My Last Name No. 7"
+        },
+        {
+            "id":8,
+            "name":"UserName-8",
+            "firstName":"My First Name No. 8",
+            "lastName":"My Last Name No. 8"
+        },
+        {
+            "id":9,
+            "name":"UserName-9",
+            "firstName":"My First Name No. 9",
+            "lastName":"My Last Name No. 9"
+        },
+        {
+            "id":10,
+            "name":"UserName-10",
+            "firstName":"My First Name No. 10",
+            "lastName":"My Last Name No. 10"
+        },
+        {
+            "id":11,
+            "name":"UserName-11",
+            "firstName":"My First Name No. 11",
+            "lastName":"My Last Name No. 11"
+        },
+        {
+            "id":12,
+            "name":"UserName-12",
+            "firstName":"My First Name No. 12",
+            "lastName":"My Last Name No. 12"
+        },
+        {
+            "id":13,
+            "name":"UserName-13",
+            "firstName":"My First Name No. 13",
+            "lastName":"My Last Name No. 13"
+        },
+        {
+            "id":14,
+            "name":"UserName-14",
+            "firstName":"My First Name No. 14",
+            "lastName":"My Last Name No. 14"
+        },
+        {
+            "id":15,
+            "name":"UserName-15",
+            "firstName":"My First Name No. 15",
+            "lastName":"My Last Name No. 15"
+        },
+        {
+            "id":16,
+            "name":"UserName-16",
+            "firstName":"My First Name No. 16",
+            "lastName":"My Last Name No. 16"
+        },
+        {
+            "id":17,
+            "name":"UserName-17",
+            "firstName":"My First Name No. 17",
+            "lastName":"My Last Name No. 17"
+        },
+        {
+            "id":18,
+            "name":"UserName-18",
+            "firstName":"My First Name No. 18",
+            "lastName":"My Last Name No. 18"
+        },
+        {
+            "id":19,
+            "name":"UserName-19",
+            "firstName":"My First Name No. 19",
+            "lastName":"My Last Name No. 19"
+        },
+        {
+            "id":20,
+            "name":"UserName-20",
+            "firstName":"My First Name No. 20",
+            "lastName":"My Last Name No. 20"
+        },
+        {
+            "id":21,
+            "name":"UserName-21",
+            "firstName":"My First Name No. 21",
+            "lastName":"My Last Name No. 21"
+        },
+        {
+            "id":22,
+            "name":"UserName-22",
+            "firstName":"My First Name No. 22",
+            "lastName":"My Last Name No. 22"
+        },
+        {
+            "id":23,
+            "name":"UserName-23",
+            "firstName":"My First Name No. 23",
+            "lastName":"My Last Name No. 23"
+        },
+        {
+            "id":24,
+            "name":"UserName-24",
+            "firstName":"My First Name No. 24",
+            "lastName":"My Last Name No. 24"
+        },
+        {
+            "id":25,
+            "name":"UserName-25",
+            "firstName":"My First Name No. 25",
+            "lastName":"My Last Name No. 25"
+        }
+    ]
+
+}

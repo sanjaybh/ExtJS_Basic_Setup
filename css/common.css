@@ -1,0 +1,29 @@
+.x-superboxselect li {
+	float: left;
+	line-height: 16px;
+	margin: 1px 1px 2px;
+	padding: 0;
+}
+.x-superboxselect-item {
+	background-color: #DEE7F8;
+	border: 1px solid #CAD8F3;
+	border-radius: 6px 6px 6px 6px;
+	padding: 1px 15px 1px 5px !important;
+	position: relative;
+}
+
+.x-superboxselect-item-close {
+	background: url("../img/close.png") no-repeat scroll left 0 rgba(0, 0, 0, 0);
+	border: medium none;
+	cursor: pointer;
+	display: block;
+	font-size: 1px;
+	height: 16px;
+	padding: 0;
+	position: absolute;
+	right: 0;
+	top: 2px;
+	width: 13px;
+}
+
+/**/

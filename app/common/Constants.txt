@@ -1,0 +1,47 @@
+Ext.define('GDPR.common.Constants', {
+    //extend: 'Object',
+    //singleton  : true,   
+
+  constructor: function(config){ 
+    //console.log("Calling Constants constructor function.")
+    //Ext.apply(this, config || {} );
+
+    var isStubbed = false;
+
+    this.URL_SERVER_ROOT = "./";
+    this.URL_SERVER_BASE_ROOT = "./app/";
+    
+    //this.URL_STUBBED_FILES = this.URL_SERVER_BASE_ROOT+"/stubbed/";
+    this.URL_STUBBED_FILES = this.URL_SERVER_ROOT+"/stubbed/";
+
+    this.URL_SERVER_BASEURL = "http://localhost:8080/AccoliteTest";
+    
+    this.URL_WEST_PANEL = this.URL_STUBBED_FILES+"/treeData.json";
+    //this.URL_WEST_PANEL = this.URL_SERVER_BASEURL+"/ConnectToJava";
+
+    this.URL_MASTER_PANEL_TDDRSTATUS = this.URL_STUBBED_FILES+"/Tddrstatus.json";
+
+    this.URL_MASTER_PANEL_TDIVISION = this.URL_STUBBED_FILES+"/tdivision.json";
+
+    this.URL_MASTER_PANEL_TCOMPANY_SYSTEM = this.URL_STUBBED_FILES+"/tcompanysystem.json";
+
+    this.URL_MASTER_PANEL_TSCOPE_COCOMPANY = this.URL_STUBBED_FILES+"/tscopecosystem.json";
+    
+    this.URL_MASTER_PANEL_TSYSTEM = this.URL_STUBBED_FILES+"/tsystem.json"; 
+
+    this.URL_MASTER_PANEL_TUSER = this.URL_STUBBED_FILES+"/tuser.json";       
+
+    this.URL_MASTER_PANEL_TCOMPANY = this.URL_STUBBED_FILES+"/tcompany.json";
+
+    this.URL_MASTER_PANEL_TSCOPE = this.URL_STUBBED_FILES+"/tscope.json";
+
+    this.URL_MASTER_PANEL_TSTATUSTYPE = this.URL_STUBBED_FILES+"/tstatusType.json";
+
+    this.URL_MASTER_PANEL_SUCCESS_MSG = this.URL_STUBBED_FILES+"/success.json";
+    
+    
+    this.REFERRER_URLS = {"inquiry":"../home.html", "defaultPage":'Default.html' };
+        
+    this.callParent(arguments);
+  }
+  });

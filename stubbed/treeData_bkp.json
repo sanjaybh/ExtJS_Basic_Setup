@@ -1,0 +1,56 @@
+[{
+    "text": "Master Data Tables", "active":false, "expanded": true, "children": [
+        {"text": "Status Type", "leaf": true, "active":true, "id":"tStatusType"},        
+        {"text": "DDR Status", "leaf": true, "active":true, "id":"tDdrStatus"},        
+        {"text": "User", "leaf": true, "active":true, "id":"tUser"},       
+        
+        {"text": "Division", "leaf": true, "active":true, "id":"tDivision"},
+        {"text": "Company", "leaf": true, "active":true, "id":"tCompany"},
+        {"text": "Company System", "leaf": true, "active":true, "id":"tCompanySystem"},
+
+        {"text": "Scope Co System", "leaf": true, "active":true, "id":"tScopeCoSystem"},        
+        {"text": "System", "leaf": true, "active":true, "id":"tSystem"},
+        {"text": "Scope", "leaf": true, "active":true, "id":"tScope"},
+
+        
+        {"text": "DD Request", "leaf": true, "active":false, "id":"tDdRequest"},
+        {"text": "DDR Task", "leaf": true, "active":false, "id":"tDdrTask"},
+        {"text": "Log", "leaf": true, "id":"tLog", "active":false}
+        
+    ] 
+}]
+
+[{
+    "sno":10, "text": "Master Data Tables", "active":false, "expanded": true, "children": [
+        {"sno":1, "text": "Status Type", "leaf": true, "active":true, "id":"tStatusType"},        
+        {"sno":2, "text": "DDR Status", "leaf": true, "active":true, "id":"tDdrStatus"},        
+        {"sno":3, "text": "User", "leaf": true, "active":true, "id":"tUser"}, 
+        {"sno":4, "text": "Division", "leaf": true, "active":true, "id":"tDivision"},
+        {"sno":5, "text": "Company", "leaf": true, "active":true, "id":"tCompany"},
+        {"sno":6, "text": "Company System", "leaf": true, "active":true, "id":"tCompanySystem"},
+        {"sno":7, "text": "Scope Co System", "leaf": true, "active":true, "id":"tScopeCoSystem"},        
+        {"sno":8, "text": "System", "leaf": true, "active":true, "id":"tSystem"},
+        {"sno":9, "text": "Scope", "leaf": true, "active":true, "id":"tScope"}
+    ] 
+}]
+
+
+
+{
+    "success": true,
+    "treedata": [
+        {
+            "sno":10, "text": "Master Data Tables", "active":false, "expanded": true, "children": [
+                {"sno":1, "text": "Status Type", "leaf": true, "active":true, "id":"tStatusType"},        
+                {"sno":2, "text": "DDR Status", "leaf": true, "active":true, "id":"tDdrStatus"},        
+                {"sno":3, "text": "User", "leaf": true, "active":true, "id":"tUser"}, 
+                {"sno":4, "text": "Division", "leaf": true, "active":true, "id":"tDivision"},
+                {"sno":5, "text": "Company", "leaf": true, "active":true, "id":"tCompany"},
+                {"sno":6, "text": "Company System", "leaf": true, "active":true, "id":"tCompanySystem"},
+                {"sno":7, "text": "Scope Co System", "leaf": true, "active":true, "id":"tScopeCoSystem"},        
+                {"sno":8, "text": "System", "leaf": true, "active":true, "id":"tSystem"},
+                {"sno":9, "text": "Scope", "leaf": true, "active":true, "id":"tScope"}
+            ] 
+        }
+    ]
+}
